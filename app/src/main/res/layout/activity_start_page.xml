@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Start_page">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_image"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageview"
+        android:alpha="0.8"
+        />
+
+    <TextView
+        android:id="@+id/foodsetgo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:fontFamily="@font/mainfont"
+        android:gravity="center_horizontal"
+        android:text="Lets Taste It!"
+        android:textColor="#000000"
+        android:textSize="90sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:id="@+id/linear"
+        android:orientation="vertical"
+
+        >
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue as Customer >"
+            android:textSize="20sp"
+            android:fontFamily="@font/mainfont"
+            android:layout_gravity="center"
+            android:id="@+id/Customer"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue as Restaurant Owner >"
+            android:id="@+id/Owner"
+            android:textSize="20sp"
+            android:fontFamily="@font/mainfont"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
