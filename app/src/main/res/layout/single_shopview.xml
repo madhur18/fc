@@ -6,8 +6,7 @@
     card_view:cardElevation="6dp"
     card_view:cardCornerRadius="8dp"
     android:id="@+id/root"
-    card_view:cardBackgroundColor="@color/welcome_blue"
-    >
+    card_view:cardBackgroundColor="@color/welcome_blue">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#8CB42B</color>
+    <color name="colorPrimary">#8FB82D</color>
     <color name="colorPrimaryDark">#648613</color>
     <color name="colorAccent">#225F20</color>
     <color name="grey">#9e9e9e</color>
     <color name="button_pink">#FDD63C</color>
-    <color name="welcome_blue">#9BB42B</color>
+    <color name="welcome_blue">#97719706</color>
     <color name="white">#fafafa</color>
     <color name="black">#000000</color>
     <color name="light_grey">#E6E6E6</color>
     <color name="dark_grey">#424242</color>
+    <color name="navigation_header_ka_color">#959C28</color>
 
 </resources>

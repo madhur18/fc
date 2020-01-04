@@ -165,7 +165,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/button_pink"
-            android:text="Add to Shopping Cart" />
+            android:text="Add to Shopping Cart"
+            android:fontFamily="@font/mainfont"/>
 
     </LinearLayout>
 </ScrollView>

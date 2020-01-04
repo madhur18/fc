@@ -9,51 +9,68 @@
         android:roundIcon="@mipmap/custom_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ShopList"></activity>
+
+        <activity android:name=".ShopList"
+                android:label="Shops">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
         <activity
             android:name=".Restaurent_homepage"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".Login.Restaurent_authpage" />
+
         <activity android:name=".Restaurent_login" />
+
         <activity android:name=".Start_page" />
+
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
-
-
                     <intent-filter>
                     <action android:name="android.intent.action.MAIN" />
-
                     <category android:name="android.intent.category.LAUNCHER" />
                 </intent-filter>
-
         </activity>
+
         <activity android:name=".Login.WelcomeScreenActivity"
                   android:label="I am a Customer">
             <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
         </activity>
-        <activity android:name=".Login.LoginActivity"
-                >
+
+        <activity android:name=".Login.LoginActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+
         <activity android:name=".ProfileWindows.UserProfileActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+
         <activity android:name=".Shop.ShopHomeActivity" />
+
         <activity android:name=".ProfileWindows.ShopProfileActivity" />
+
         <activity
             android:name=".Menu.ShopMenuActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".Menu.MenuItems.itemEditor" />
+
         <activity android:name=".ProfileWindows.itemInfoWindow" />
+
         <activity android:name=".Order.ShoppingCart.ShoppingCart" />
+
         <activity android:name=".Order.OrdersTerminalActivity" />
+
         <activity android:name=".HomeActivity">
            <!-- <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

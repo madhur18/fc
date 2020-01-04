@@ -155,6 +155,7 @@
         android:layout_alignParentBottom="true"
         android:background="@color/button_pink"
         android:text="ORDER"
+        android:fontFamily="@font/mainfont"
         android:textColor="@color/black"
         android:textSize="20sp" />
 </RelativeLayout>

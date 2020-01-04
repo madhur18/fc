@@ -143,6 +143,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="SIGN OUT"
+            android:fontFamily="@font/mainfont"
             android:background="@color/button_pink" />
 
         <Button
@@ -152,7 +153,8 @@
             android:layout_weight="1"
             android:layout_marginLeft="2dp"
             android:background="@color/button_pink"
-            android:text="DELETE ACCOUNT" />
+            android:text="DELETE ACCOUNT"
+            android:fontFamily="@font/mainfont"/>
 
     </LinearLayout>
 

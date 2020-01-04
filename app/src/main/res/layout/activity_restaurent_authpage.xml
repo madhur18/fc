@@ -33,10 +33,11 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="122dp"
-        android:textSize="40sp"
+        android:textSize="28sp"
         android:textColor="@color/button_pink"
         android:background="@color/cardview_shadow_end_color"
         android:text="SIGN UP"
+        android:fontFamily="@font/mainfont"
         android:theme="@style/Widget.AppCompat.Button.Borderless.Colored" />
 
     <Button
@@ -45,9 +46,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:textSize="40sp"
+        android:textSize="28sp"
         android:layout_marginBottom="56dp"
         android:text="LOG IN"
+        android:fontFamily="@font/mainfont"
         android:textColor="@color/button_pink"
         android:background="@color/cardview_shadow_end_color"
         android:theme="@style/Widget.AppCompat.Button.Borderless.Colored" />
