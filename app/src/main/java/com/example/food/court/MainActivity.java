@@ -1,7 +1,6 @@
 package com.example.food.court;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -10,6 +9,7 @@ import android.net.Uri;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -359,19 +359,36 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_share:
                 drawer.closeDrawer(GravityCompat.START);
-                Toast.makeText(this, "Sharing...", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "Sharing...", Toast.LENGTH_SHORT).show();
+                Intent intent1 = new Intent(getApplicationContext(),Customer_About_Us.class);
+                startActivity(intent1);
                 break;
             case R.id.nav_send:
                 drawer.closeDrawer(GravityCompat.START);
-                FirebaseAuth.getInstance().signOut();
-                finish();
-                Toast.makeText(this, "Signed out!", Toast.LENGTH_SHORT).show();
+                androidx.appcompat.app.AlertDialog.Builder abuilder = new AlertDialog.Builder(MainActivity.this);
+                abuilder.setTitle("Signing out");
+                abuilder.setMessage("Are you sure you want to sign out?");
+                abuilder.setPositiveButton("SIGN OUT", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        FirebaseAuth.getInstance().signOut();
+                        finish();
+                        Toast.makeText(MainActivity.this, "Signed out successfully", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                abuilder.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+                abuilder.show();
                 break;
             case R.id.mCallButton:
                 drawer.closeDrawer(GravityCompat.START);
-                Intent intent1 = new Intent(Intent.ACTION_DIAL);
-                intent1.setData(Uri.parse("tel:" + ShopInfo.shopNumber));
-                startActivity(intent1);
+                Intent intent2 = new Intent(Intent.ACTION_DIAL);
+                intent2.setData(Uri.parse("tel:" + ShopInfo.shopNumber));
+                startActivity(intent2);
                 break;
             case R.id.shoppingCart:
                 drawer.closeDrawer(GravityCompat.START);
