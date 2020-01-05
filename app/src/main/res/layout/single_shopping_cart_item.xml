@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="100dp"
     android:layout_margin="4dp"
-    card_view:cardBackgroundColor="@color/welcome_blue"
+    card_view:cardBackgroundColor="#B4B3B3"
     card_view:cardCornerRadius="8dp"
     card_view:cardElevation="6dp">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -16,7 +16,7 @@
     android:minHeight="@dimen/list_item_height">
 
     <RelativeLayout
-        android:background="@color/welcome_blue"
+        android:background="#B4B3B3"
         android:id="@+id/sTextContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

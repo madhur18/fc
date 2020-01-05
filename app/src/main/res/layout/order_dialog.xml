@@ -164,7 +164,9 @@
             android:id="@+id/oAddToCartButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/button_pink"
+            android:background="@drawable/mybutton"
+            android:alpha="0.75"
+            android:textColor="@color/white"
             android:text="Add to Shopping Cart"
             android:fontFamily="@font/mainfont"/>
 

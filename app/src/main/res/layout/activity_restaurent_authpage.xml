@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login.Restaurent_authpage"
-    android:background="@color/welcome_blue">
+    >
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/image3"
-        android:alpha="0.5"
+        android:alpha="0.3"
         android:scaleType="centerCrop" />
 
     <TextView
@@ -22,9 +22,11 @@
         android:elegantTextHeight="true"
         android:text="WELCOME"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="40dp"
-        android:textStyle="italic" />
+        android:textStyle="italic"
+        android:fontFamily="@font/mainfont"
+        />
 
     <Button
         android:id="@+id/sign_up"
@@ -34,8 +36,9 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="122dp"
         android:textSize="28sp"
-        android:textColor="@color/button_pink"
-        android:background="@color/cardview_shadow_end_color"
+        android:textColor="@color/white"
+        android:background="@drawable/mybutton"
+        android:alpha="0.75"
         android:text="SIGN UP"
         android:fontFamily="@font/mainfont"
         android:theme="@style/Widget.AppCompat.Button.Borderless.Colored" />
@@ -50,8 +53,9 @@
         android:layout_marginBottom="56dp"
         android:text="LOG IN"
         android:fontFamily="@font/mainfont"
-        android:textColor="@color/button_pink"
-        android:background="@color/cardview_shadow_end_color"
+        android:textColor="@color/white"
+        android:background="@drawable/mybutton"
+        android:alpha="0.75"
         android:theme="@style/Widget.AppCompat.Button.Borderless.Colored" />
 
 </RelativeLayout>

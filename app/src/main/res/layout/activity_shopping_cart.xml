@@ -23,7 +23,10 @@
         android:layout_margin="10dp"
         android:fontFamily="@font/mainfont"
         android:text="Order"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:alpha="0.75"
+        android:background="@drawable/mybutton"/>
 
     <LinearLayout
         android:id="@+id/sLabelView"

@@ -6,16 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="100dp"
     android:layout_margin="4dp"
-    card_view:cardBackgroundColor="@color/welcome_blue"
+    card_view:cardBackgroundColor="#B4B3B3"
     card_view:cardCornerRadius="8dp"
-    card_view:cardElevation="6dp">
+    card_view:cardElevation="6dp"
+    >
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="@dimen/list_item_height"
     android:minHeight="@dimen/list_item_height">
 
     <RelativeLayout
-        android:background="@color/welcome_blue"
+        android:background="#B4B3B3"
         android:id="@+id/sTextContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -37,10 +38,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="OrderId: "
+                    android:text="Order Id : "
                     android:gravity="bottom"
                     android:textSize="16sp"
-                    android:textColor="@color/button_pink"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
 
                 <TextView
@@ -49,7 +50,7 @@
                     android:layout_height="match_parent"
                     android:gravity="bottom"
                     android:textAppearance="?android:textAppearanceMedium"
-                    android:textColor="@color/button_pink"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     tools:text="hhhh" />
@@ -69,7 +70,7 @@
                     android:gravity="top"
                     android:textSize="12sp"
                     android:textStyle="italic"
-                    android:textColor="@color/button_pink" />
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/soUserID"
@@ -79,7 +80,7 @@
                     android:textSize="12sp"
                     android:textStyle="italic"
                     android:textAppearance="?android:textAppearanceMedium"
-                    android:textColor="@color/button_pink"
+                    android:textColor="@color/black"
                     tools:text="User ID" />
             </LinearLayout>
 
@@ -93,6 +94,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="0dp"
             android:gravity="bottom"
+            android:textColor="@color/black"
             android:text="Total price \n= 3000Rs/-"
             android:textSize="14sp" />
     </RelativeLayout>

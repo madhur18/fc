@@ -7,13 +7,13 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".Restaurent_login"
-    android:background="@color/welcome_blue">
+    >
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/image5"
-        android:alpha="0.5"
+        android:alpha="0.3"
         android:scaleType="centerCrop" />
 
 
@@ -23,7 +23,8 @@
         android:layout_alignParentTop="true"
         android:text="FOOD COURT"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
+        android:fontFamily="@font/mainfont"
         android:textSize="40dp"
         android:textStyle="italic"
         android:elegantTextHeight="true"
@@ -137,8 +138,10 @@
             android:layout_marginTop="16dp"
             android:text="SIGN UP"
             android:textStyle="bold"
+            android:textColor="@color/white"
+            android:alpha="0.75"
             android:fontFamily="@font/mainfont"
-            android:background="@color/button_pink"
+            android:background="@drawable/mybutton"
             android:theme="@style/Widget.AppCompat.Button.Borderless.Colored" />
 
         <TextView

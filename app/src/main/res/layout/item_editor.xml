@@ -39,7 +39,7 @@
                 android:layout_height="48dp"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
-                android:background="@color/button_pink"
+
                 android:src="@drawable/sharp_delete_black_48dp" />
 
             <ImageButton
@@ -47,7 +47,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_alignParentBottom="true"
-                android:background="@color/button_pink"
+
                 android:src="@drawable/sharp_add_photo_alternate_black_48dp" />
         </RelativeLayout>
 

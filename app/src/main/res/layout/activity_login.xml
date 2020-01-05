@@ -7,7 +7,7 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".Login.LoginActivity"
-    android:background="@color/welcome_blue">
+    >
 
     <ImageView
         android:layout_width="match_parent"
@@ -16,18 +16,19 @@
         android:alpha="0.2"
         android:scaleType="centerCrop" />
 
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:text="WELCOME"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="40dp"
-        android:textStyle="italic"
+        android:fontFamily="@font/mainfont"
         android:elegantTextHeight="true"
+        android:textStyle="italic"
         android:padding="12dp" />
+    <!-- android:textStyle="italic" -->
 
     <ProgressBar
         android:id="@+id/login_progress"
@@ -137,8 +138,10 @@
             android:layout_marginTop="16dp"
             android:text="SIGN UP"
             android:textSize="20sp"
+            android:textColor="@color/white"
             android:fontFamily="@font/mainfont"
-            android:background="@color/button_pink"
+            android:background="@drawable/mybutton"
+            android:alpha="0.75"
             android:theme="@style/Widget.AppCompat.Button.Borderless.Colored" />
 
         <TextView
@@ -151,6 +154,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/mainfont"
             android:textColor="@color/button_pink"
+            android:textStyle="bold"
             android:textAlignment="center"
             android:text="@string/password_recover" />
 

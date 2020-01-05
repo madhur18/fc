@@ -37,22 +37,29 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Continue as Customer >"
+            android:text="  I am a Customer  "
             android:textSize="20sp"
             android:fontFamily="@font/mainfont"
             android:layout_gravity="center"
             android:id="@+id/Customer"
             android:textStyle="bold"
+            android:background="@drawable/mybutton"
+            android:textColor="@color/white"
+            android:alpha="0.75"
             />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Continue as Restaurant Owner >"
+            android:layout_marginTop="8dp"
+            android:text="  I am a Restaurant Owner  "
             android:id="@+id/Owner"
             android:textSize="20sp"
             android:fontFamily="@font/mainfont"
             android:layout_gravity="center"
+            android:background="@drawable/mybutton"
+            android:textColor="@color/white"
+            android:alpha="0.75"
             />
     </LinearLayout>
 

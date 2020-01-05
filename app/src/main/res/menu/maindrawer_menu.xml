@@ -32,8 +32,8 @@
         <menu>
             <item
                 android:id="@+id/nav_share"
-                android:icon="@drawable/ic_share"
-                android:title="Free Button" />
+                android:icon="@drawable/ic_contacts_black_24dp"
+                android:title="About Us" />
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_send"

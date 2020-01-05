@@ -153,9 +153,10 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/button_pink"
+        android:background="@drawable/mybutton"
+        android:alpha="0.75"
         android:text="ORDER"
         android:fontFamily="@font/mainfont"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="20sp" />
 </RelativeLayout>
