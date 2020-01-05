@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".Login.LoginActivity"
-    >
+    tools:context=".Login.LoginActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -128,7 +127,6 @@
             android:layout_height="wrap_content"
             android:hint="Address"
             android:inputType="textPostalAddress" />
-
 
         <Button
             android:id="@+id/register_button"

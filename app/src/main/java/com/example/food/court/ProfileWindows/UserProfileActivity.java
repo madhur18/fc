@@ -18,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.food.court.MainActivity;
 import com.example.food.court.R;
 import com.example.food.court.User.User;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -154,8 +155,24 @@ public class UserProfileActivity extends AppCompatActivity {
         signOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
-                finish();
+                androidx.appcompat.app.AlertDialog.Builder abuilder = new androidx.appcompat.app.AlertDialog.Builder(UserProfileActivity.this);
+                abuilder.setTitle("Signing out");
+                abuilder.setMessage("Are you sure you want to sign out?");
+                abuilder.setPositiveButton("SIGN OUT", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        FirebaseAuth.getInstance().signOut();
+                        finish();
+                        Toast.makeText(UserProfileActivity.this, "Signed out successfully", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                abuilder.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+                abuilder.show();
                 //finishing this activity opens the main activity and onAuthStateChanged will get called
             }
         });
