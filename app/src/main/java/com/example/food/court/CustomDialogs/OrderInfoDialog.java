@@ -256,6 +256,7 @@ public class OrderInfoDialog extends Dialog {
                     public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
                         fromReferenceuser.removeValue();
                         Toast.makeText(getContext(), positiveToastMessage, Toast.LENGTH_SHORT).show();
+                        Log.i(TAG, "onComplete: userdatABASE"+orderId);
                         dismiss();
                     }
                 });

@@ -387,7 +387,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.mCallButton:
                 drawer.closeDrawer(GravityCompat.START);
                 Intent intent2 = new Intent(Intent.ACTION_DIAL);
-                intent2.setData(Uri.parse("tel:" + ShopInfo.shopNumber));
+                intent2.setData(Uri.parse("tel:" + contactapp));
                 startActivity(intent2);
                 break;
             case R.id.shoppingCart:

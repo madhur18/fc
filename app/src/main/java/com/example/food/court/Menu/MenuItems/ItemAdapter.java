@@ -153,6 +153,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
                     intent.putExtra(mcontext.getString(R.string.itemDescription), holder.itemDescription.getText().toString());
                     intent.putExtra(mcontext.getString(R.string.itemCategory), mcontext.getString(R.string.burger));
                     intent.putExtra(mcontext.getString(R.string.itemId), holder.itemId.getText().toString());
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     mcontext.startActivity(intent);
 
                 }

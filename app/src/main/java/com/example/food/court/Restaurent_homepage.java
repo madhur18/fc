@@ -2,11 +2,13 @@ package com.example.food.court;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -111,13 +113,29 @@ public class Restaurent_homepage extends AppCompatActivity implements Navigation
                 break;
             case R.id.nav_share:
                 drawer.closeDrawer(GravityCompat.START);
-                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
+                Intent intent1 = new Intent(getApplicationContext(),Customer_About_Us.class);
+                startActivity(intent1);
                 break;
             case R.id.nav_send:
                 drawer.closeDrawer(GravityCompat.START);
-        FirebaseAuth.getInstance().signOut();
-        finish();
-                Toast.makeText(this, "Send", Toast.LENGTH_SHORT).show();
+                androidx.appcompat.app.AlertDialog.Builder abuilder = new AlertDialog.Builder(Restaurent_homepage.this);
+                abuilder.setTitle("Signing out");
+                abuilder.setMessage("Are you sure you want to sign out?");
+                abuilder.setPositiveButton("SIGN OUT", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        FirebaseAuth.getInstance().signOut();
+                        finish();
+                        Toast.makeText(Restaurent_homepage.this, "Signed out successfully", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                abuilder.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+                abuilder.show();
                 break;
         }
 

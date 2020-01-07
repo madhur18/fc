@@ -186,7 +186,9 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="SIGN OUT"
-            android:background="@color/button_pink"
+            android:background="@drawable/mybutton"
+            android:textColor="@color/white"
+            android:alpha="0.75"
             android:fontFamily="@font/mainfont"/>
 
         <Button
@@ -195,7 +197,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginLeft="2dp"
-            android:background="@color/button_pink"
+            android:background="@drawable/mybutton"
+            android:textColor="@color/white"
+            android:alpha="0.75"
             android:text="DELETE ACCOUNT"
             android:fontFamily="@font/mainfont"/>
 

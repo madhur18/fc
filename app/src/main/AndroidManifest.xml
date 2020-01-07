@@ -56,7 +56,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".Shop.ShopHomeActivity" />
+        <activity android:name=".Shop.ShopHomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".ProfileWindows.ShopProfileActivity" />
         <activity
             android:name=".Menu.ShopMenuActivity"

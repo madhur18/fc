@@ -70,6 +70,7 @@ public class ShopListAdapter extends RecyclerView.Adapter<ShopListAdapter.ViewHo
                 editor.putString("SHOPID",holder.shopID).apply();
                 Log.i(TAG, "onClick: shopid: "+pref.getString("SHOPID",""));
                 Intent i=new Intent(mcontext, ShopMenuActivity.class);
+                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 applicationContext.startActivity(i);
             }
         });
